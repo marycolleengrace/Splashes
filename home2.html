@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splashes - Home</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="text-white text-center py-5" style="background: url('images/home.jpeg') no-repeat center center; background-size: cover; height: 100vh;">
+            <style>
+                @media (max-width: 768px) {
+                    header {
+                        background-size: contain;
+                        height: 50vh;
+                    }
+                }
+                @media (min-width: 769px) and (max-width: 1200px) {
+                    header {
+                        background-size: cover;
+                        height: 75vh;
+                    }
+                }
+            </style>
+            <h1 style="font-family: 'Bodoni Moda', serif;">{{ mainTitle }}</h1>
+            <p style="font-family: 'Open Sans', sans-serif;">{{ subtitle }}</p>
+        </header>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="index.html" class="navbar-brand">
+                <img src="Graphics/logo-small.png" alt="Splashes Logo">
+                Splashes
+            </a>
+            <div class="nav-links">
+                <a href="about.html" class="nav-link">About</a>
+                <a href="swimming-lessons.html" class="nav-link">Swimming Lessons</a>
+                <a href="swim-programs.html" class="nav-link">Swim Programs</a>
+                <a href="adult-programs.html" class="nav-link">Adult Programs</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="contact-us.html" class="nav-link">Contact Us</a>
+            </div>
+            <a href="register.html" class="btn-register">Register / Sign In</a>
+        </nav>
+
+        <section class="container my-5">
+            <h2 style="font-family: 'Bodoni Moda', serif;">About Our Lessons</h2>
+            <p style="font-family: 'Open Sans', sans-serif;">At Splashes, we offer a variety of swimming lessons designed for children of all ages and skill levels. Our certified instructors focus on building confidence in the water through fun and engaging activities.</p>
+            <a href="lessons.html" class="btn" style="background-color: #03B1F4; color: white;">Learn More</a>
+        </section>
+
+        <footer>
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="Graphics/footer-logo-wave-small.png" alt="Waterworks Aquatics Logo">
+                </div>
+                <div class="footer-links">
+                    <a href="home.html">Home</a>
+                    <a href="lessons.html">Lessons</a>
+                    <a href="register.html">Register</a>
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="contactUs.html">Contact</a>
+                </div>
+            </div>
+            <div class="footer-social-icons">
+                <a href="#"><img src="Graphics/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="Graphics/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="Graphics/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="Graphics/youtube-icon.png" alt="YouTube"></a>
+            </div>
+            <div class="contact-details">
+                <p><span class="county">Orange County:</span> (949) 455-0777</p>
+                <p><span class="county">San Diego County:</span> (760) 603-9400</p>
+                <p><span class="county">Los Angeles County:</span> (310) 826-1200</p>
+                <p><span class="county">Northern California:</span> (408) 279-1700</p>
+                <p><span class="county">Denver:</span> (720) 344-7700</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Splashes. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
